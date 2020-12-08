@@ -6,7 +6,7 @@ name: QQ阅读APP2
 on:
   workflow_dispatch:
   schedule:
-     - cron: '30 10-23 * * *'
+     - cron: '32 10-23 * * *'
   watch:
     types: started
 
@@ -17,7 +17,7 @@ jobs:
     env:
         QQREADAPP_HEADER: ${{ secrets.QQREADAPP_HEADER2 }}
         QQREADAPP_VIDEOHD: ${{ secrets.QQREADAPP_VIDEOHD2 }}
-        COOKIES_SPLIT: ${{ secrets.COOKIES_SPLIT2 }}
+        COOKIES_SPLIT: ${{ secrets.COOKIES_SPLIT }}
         
     steps:
       - name: Checkout
